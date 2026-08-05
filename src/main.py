@@ -65,7 +65,8 @@ def main():
 
     print("Ready. Type queries (or 'exit'):")
 
-    app = SearchApp(engine, logger)
+    eval_logger = EvalLogger()
+    app = SearchApp(engine, eval_logger)
     app.run()
 
 
